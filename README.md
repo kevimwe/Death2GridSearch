@@ -5,7 +5,7 @@
 
 **4/19/2019**
 
-This is a demo of classification utility to select the best performing classifier based on desired metric. At the moment this is built for selection of `Classication` algorithms but can be expanded to gridsearch for `Regression` algorithms
+This is a demo of classification utility to select the best performing classifier based on desired metric. Now this is built for selection of `Classification` algorithms but can be expanded to GridSearch for `Regression` algorithms
 
 Directory Structure:
 * **setup** - contains [`.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
