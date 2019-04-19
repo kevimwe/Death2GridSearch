@@ -16,10 +16,10 @@ The support classifiers and hyperarams are defined in `argo.yaml` file in the se
  * **KNeighborsClassifier:** {'n_neighbors', 'algorithm'}
  * **AdaBoostClassifier:** {'n_estimators', 'learning_rate'}
       
-Directory Structure:
-* **setup** - contains [`algo.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
-* **data** -  Folder containing sample data
-* **results** - Final results of grid search. classifiers and hyperparams combinations are logged.
+### Directory Structure:
+* ***setup*** - contains [`algo.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
+* ***data*** -  Folder containing sample data
+* ***results*** - Final results of grid search. classifiers and hyperparams combinations are logged.
       
      * [ClassifierRuns](https://github.com/kevimwe/Death2GridSearch/tree/master/results/ClassifiersRuns) - logs for each classifer hyperparam runs
      
