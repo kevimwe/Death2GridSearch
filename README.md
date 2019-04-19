@@ -7,10 +7,14 @@
 
 This is a demo of classification utility to select the best performing classifier based on desired metric. At the moment this is built for selection of `Classication` algorithms but can be expanded to gridsearch for `Regression` algorithms
 
-Directory Structure
+Directory Structure:
+
     1. setup - contains .yaml file defining the classifiers and hyperparameters. 
+    
     2. data -  Folder containing sample data
+    
     3. results - Final results of grid search. classifiers and hyperparams combinations are logged.
+    
 
 
 ```python
