@@ -5,10 +5,18 @@
 
 **4/19/2019**
 
-This is a demo of classification utility to select the best performing classifier based on desired metric. Now this is built for selection of `Classification` algorithms but can be expanded to GridSearch for `Regression` algorithms
+This is a demo of `Death2GridSearch.py` a classification utility to select the best performing classifier based on desired metric. Now this is built for selection of `Classification` algorithms but can be expanded to GridSearch for `Regression` algorithms using the same approach.
+
+The support classifiers and hyperarams are defined in `argo.yaml` file in the setup directory which can be expanded to more hyperparams definations. Below classifiers are currently defined
+      * LogisticRegression
+      * RandomForestClassifier
+      * DecisionTreeClassifier
+      * MLPClassifier
+      * KNeighborsClassifier
+      * AdaBoostClassifier
 
 Directory Structure:
-* **setup** - contains [`.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
+* **setup** - contains [`algo.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
 * **data** -  Folder containing sample data
 * **results** - Final results of grid search. classifiers and hyperparams combinations are logged.
       
