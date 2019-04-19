@@ -8,6 +8,7 @@
 This is a demo of `Death2GridSearch.py` a classification utility to select the best performing classifier based on desired metric. Now this is built for selection of `Classification` algorithms but can be expanded to GridSearch for `Regression` algorithms using the same approach.
 
 The support classifiers and hyperarams are defined in `argo.yaml` file in the setup directory which can be expanded to more hyperparams definations. Below classifiers are currently defined
+
       * LogisticRegression
       * RandomForestClassifier
       * DecisionTreeClassifier
