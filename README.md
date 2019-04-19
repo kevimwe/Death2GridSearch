@@ -9,7 +9,7 @@ This is a demo of classification utility to select the best performing classifie
 
 Directory Structure:
 
-    1. setup - contains .yaml file defining the classifiers and hyperparameters. 
+    1. setup - contains [`.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
     
     2. data -  Folder containing sample data
     
