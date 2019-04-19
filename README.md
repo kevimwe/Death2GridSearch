@@ -12,9 +12,9 @@ Directory Structure:
 * **data** -  Folder containing sample data
 * **results** - Final results of grid search. classifiers and hyperparams combinations are logged.
       
-     * [ClassifierRuns](https://github.com/kevimwe/Death2GridSearch/tree/master/results/ClassifiersRuns) See sample runs
+     * [ClassifierRuns](https://github.com/kevimwe/Death2GridSearch/tree/master/results/ClassifiersRuns) - logs for each classifer hyperparam runs
      
-     * Summary
+     * [Summary](https://github.com/kevimwe/Death2GridSearch/blob/master/results/Summary/Summary.txt) -  summary of best performing model per performance metric and hyperparams
     
 
 
