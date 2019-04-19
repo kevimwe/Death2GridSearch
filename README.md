@@ -12,7 +12,7 @@ Directory Structure:
 * **data** -  Folder containing sample data
 * **results** - Final results of grid search. classifiers and hyperparams combinations are logged.
       
-     * ClassifierRuns
+     * [ClassifierRuns](https://github.com/kevimwe/Death2GridSearch/tree/master/results/ClassifiersRuns) See sample runs
      
      * Summary
     
