@@ -1,0 +1,54 @@
+------------------------------------------------------------------------------------
+                                Performance Summary                                 
+------------------------------------------------------------------------------------
+                       Best performing model by perfomance Metrics                  
+------------------------------------------------------------------------------------
++---------------+------------------------+-----------+-------------------------------------------------------------------------------------------------------------+
+|    Measure    |         Model          | BestScore |                                               Hyper Paramaters                                              |
++---------------+------------------------+-----------+-------------------------------------------------------------------------------------------------------------+
+|    accuracy   | RandomForestClassifier |    0.85   | {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 4, 'max_depth': 3, 'criterion': 'entropy'} |
+|   precision   |     MLPClassifier      |    0.85   |                   {'hidden_layer_sizes': 500, 'activation': 'identity', 'solver': 'adam'}                   |
+|     recall    |     MLPClassifier      |    0.95   |                     {'hidden_layer_sizes': 500, 'activation': 'relu', 'solver': 'lbfgs'}                    |
+|    f1_score   | RandomForestClassifier |    0.87   | {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 4, 'max_depth': 3, 'criterion': 'entropy'} |
+| roc_auc_score | RandomForestClassifier |    0.84   |   {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2, 'max_depth': 3, 'criterion': 'gini'}  |
++---------------+------------------------+-----------+-------------------------------------------------------------------------------------------------------------+
+
+
+------------------------------------------------------------------------------------
+                       Summary statistics by model                                  
+------------------------------------------------------------------------------------
++---------------+------------------------+-------+------+------+--------+
+|    Measure    |         Model          |  AVG  | MAX  | MIN  | StdDEV |
++---------------+------------------------+-------+------+------+--------+
+|    accuracy   |   LogisticRegression   | 0.814 | 0.82 | 0.79 |  0.01  |
+|    accuracy   | RandomForestClassifier | 0.829 | 0.85 | 0.81 |  0.01  |
+|    accuracy   | DecisionTreeClassifier |  0.75 | 0.8  | 0.69 | 0.023  |
+|    accuracy   |     MLPClassifier      | 0.744 | 0.83 | 0.65 | 0.059  |
+|    accuracy   |  KNeighborsClassifier  | 0.645 | 0.66 | 0.63 | 0.011  |
+|    accuracy   |   AdaBoostClassifier   | 0.672 | 0.84 | 0.24 |  0.25  |
+|   precision   |   LogisticRegression   | 0.821 | 0.83 | 0.8  | 0.009  |
+|   precision   | RandomForestClassifier | 0.822 | 0.84 | 0.79 | 0.012  |
+|   precision   | DecisionTreeClassifier | 0.791 | 0.83 | 0.75 | 0.022  |
+|   precision   |     MLPClassifier      | 0.754 | 0.85 | 0.67 | 0.049  |
+|   precision   |  KNeighborsClassifier  | 0.663 | 0.68 | 0.63 |  0.02  |
+|   precision   |   AdaBoostClassifier   | 0.679 | 0.84 | 0.27 | 0.237  |
+|     recall    |   LogisticRegression   | 0.851 | 0.87 | 0.82 | 0.014  |
+|     recall    | RandomForestClassifier | 0.884 | 0.91 | 0.84 | 0.017  |
+|     recall    | DecisionTreeClassifier | 0.745 | 0.82 | 0.64 | 0.044  |
+|     recall    |     MLPClassifier      | 0.809 | 0.95 | 0.66 | 0.078  |
+|     recall    |  KNeighborsClassifier  |  0.74 | 0.81 | 0.65 | 0.061  |
+|     recall    |   AdaBoostClassifier   |  0.71 | 0.91 | 0.24 | 0.273  |
+|    f1_score   |   LogisticRegression   | 0.829 | 0.84 | 0.81 | 0.008  |
+|    f1_score   | RandomForestClassifier |  0.85 | 0.87 | 0.83 | 0.011  |
+|    f1_score   | DecisionTreeClassifier | 0.759 | 0.81 | 0.69 | 0.027  |
+|    f1_score   |     MLPClassifier      | 0.773 | 0.86 | 0.68 | 0.058  |
+|    f1_score   |  KNeighborsClassifier  | 0.692 | 0.71 | 0.66 |  0.02  |
+|    f1_score   |   AdaBoostClassifier   | 0.688 | 0.86 | 0.25 | 0.254  |
+| roc_auc_score |   LogisticRegression   | 0.808 | 0.82 | 0.78 | 0.011  |
+| roc_auc_score | RandomForestClassifier | 0.824 | 0.84 | 0.8  | 0.011  |
+| roc_auc_score | DecisionTreeClassifier | 0.749 | 0.79 | 0.7  | 0.022  |
+| roc_auc_score |     MLPClassifier      | 0.737 | 0.83 | 0.64 | 0.059  |
+| roc_auc_score |  KNeighborsClassifier  | 0.638 | 0.65 | 0.61 | 0.016  |
+| roc_auc_score |   AdaBoostClassifier   | 0.667 | 0.83 | 0.24 | 0.247  |
++---------------+------------------------+-------+------+------+--------+------------------------------------------------------------------------------------
+
