@@ -8,9 +8,9 @@
 This is a demo of classification utility to select the best performing classifier based on desired metric. At the moment this is built for selection of `Classication` algorithms but can be expanded to gridsearch for `Regression` algorithms
 
 Directory Structure:
-* setup - contains [`.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
-* data -  Folder containing sample data
-*  results - Final results of grid search. classifiers and hyperparams combinations are logged.
+* **setup** - contains [`.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
+* **data** -  Folder containing sample data
+* **results** - Final results of grid search. classifiers and hyperparams combinations are logged.
     
 
 
