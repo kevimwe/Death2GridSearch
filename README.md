@@ -11,6 +11,8 @@ Directory Structure:
 * **setup** - contains [`.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
 * **data** -  Folder containing sample data
 * **results** - Final results of grid search. classifiers and hyperparams combinations are logged.
+      * ClassifierRuns
+      * Summary
     
 
 
