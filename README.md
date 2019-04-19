@@ -9,12 +9,12 @@ This is a demo of `Death2GridSearch.py` a classification utility to select the b
 
 The support classifiers and hyperarams are defined in `argo.yaml` file in the setup directory which can be expanded to more hyperparams definations. Below is  list  of classifiers and hyperparams defined in the .yaml serialization file
 
-      * **LogisticRegression** {'penalty', 'C', 'class_weight'}
-      * RandomForestClassifier {'max_features', 'n_estimators', 'min_samples_leaf', 'max_depth', 'criterion'}
-      * DecisionTreeClassifier {'criterion', 'min_samples_leaf', 'max_features', 'splitter', 'min_samples_split'}
-      * MLPClassifier {'hidden_layer_sizes', 'activation', 'solver'}
-      * KNeighborsClassifier {'n_neighbors', 'algorithm'}
-      * AdaBoostClassifier {'n_estimators', 'learning_rate'}
+ * **LogisticRegression:** {'penalty', 'C', 'class_weight'}
+ * **RandomForestClassifier:** {'max_features', 'n_estimators', 'min_samples_leaf', 'max_depth', 'criterion'}
+ * **DecisionTreeClassifier:** {'criterion', 'min_samples_leaf', 'max_features', 'splitter', 'min_samples_split'}
+ * **MLPClassifier:** {'hidden_layer_sizes', 'activation', 'solver'}
+ * **KNeighborsClassifier:** {'n_neighbors', 'algorithm'}
+ * **AdaBoostClassifier:** {'n_estimators', 'learning_rate'}
       
 Directory Structure:
 * **setup** - contains [`algo.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
