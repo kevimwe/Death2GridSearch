@@ -15,7 +15,11 @@ The support classifiers and hyperarams are defined in `argo.yaml` file in the se
  * **MLPClassifier:** {'hidden_layer_sizes', 'activation', 'solver'}
  * **KNeighborsClassifier:** {'n_neighbors', 'algorithm'}
  * **AdaBoostClassifier:** {'n_estimators', 'learning_rate'}
-      
+ * **BaggingClassifier:** {'n_estimators'}
+ * **ExtraTreesClassifier:** {'n_estimators', 'criterion', 'min_samples_leaf', 'max_features'}
+ * **GradientBoostingClassifier:** {'learning_rate', 'criterion'}
+ * **ExtraTreeClassifier:** {'criterion', 'min_samples_leaf', 'max_features', 'splitter', 'min_samples_split'}
+ 
 ### Directory Structure:
 * ***setup*** - contains [`algo.yaml`](https://github.com/kevimwe/Death2GridSearch/blob/master/setups/algos.yaml) file defining the classifiers and hyperparameters. 
 * ***data*** -  Folder containing sample data
