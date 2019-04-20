@@ -1,5 +1,5 @@
 
-# Demo of Death2GridSearch
+# Demo of Death2GridSearch -  CLassification Model Selection
 
 **Author :** Kevin O
 
