@@ -191,31 +191,7 @@ main(data =data, Response='target', n_folds=10)
     Running.... GradientBoostingClassifier
     Running.... ExtraTreeClassifier
     processing Completed Successfully
-
-
-
-
-
-<style  type="text/css" >
-    #T_87b3a590_6313_11e9_a033_4cedfb93a259row1_col0 {
-            background-color:  yellow;
-        }    #T_87b3a590_6313_11e9_a033_4cedfb93a259row1_col2 {
-            background-color:  yellow;
-        }    #T_87b3a590_6313_11e9_a033_4cedfb93a259row1_col3 {
-            background-color:  yellow;
-        }    #T_87b3a590_6313_11e9_a033_4cedfb93a259row3_col2 {
-            background-color:  yellow;
-        }    #T_87b3a590_6313_11e9_a033_4cedfb93a259row7_col0 {
-            background-color:  yellow;
-        }    #T_87b3a590_6313_11e9_a033_4cedfb93a259row7_col1 {
-            background-color:  yellow;
-        }    #T_87b3a590_6313_11e9_a033_4cedfb93a259row7_col3 {
-            background-color:  yellow;
-        }    #T_87b3a590_6313_11e9_a033_4cedfb93a259row7_col4 {
-            background-color:  yellow;
-        }    #T_87b3a590_6313_11e9_a033_4cedfb93a259row9_col1 {
-            background-color:  yellow;
-        }</style>  
+    
 <table id="T_87b3a590_6313_11e9_a033_4cedfb93a259" > 
 <thead>    <tr> 
         <th class="blank level0" ></th> 
