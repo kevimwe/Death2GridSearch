@@ -9,7 +9,7 @@
 # 4/19/2019
 
 
-# In[112]:
+# In[1]:
 
 
 import yaml
@@ -21,9 +21,9 @@ from pandas.tools.plotting import table
 import  errno
 
 #import Classifiers 
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, BaggingClassifier, ExtraTreesClassifier,GradientBoostingClassifier, VotingClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -64,7 +64,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 warnings.filterwarnings("ignore")
 
 
-# In[15]:
+# In[2]:
 
 
 # Read YAML file - File with the classification Algorithms and hyperparameters
@@ -72,7 +72,7 @@ stream= open("setups/algos.yaml", 'r')
 clf_dictionary = yaml.load(stream)
 
 
-# In[16]:
+# In[14]:
 
 
 #maps classfication objects to dict parms
@@ -81,16 +81,30 @@ clf_mapper = {MLPClassifier: "MLPClassifier",
               AdaBoostClassifier:"AdaBoostClassifier",
               RandomForestClassifier:'RandomForestClassifier',
               LogisticRegression:'LogisticRegression',
-              DecisionTreeClassifier: 'DecisionTreeClassifier'}
+              DecisionTreeClassifier: 'DecisionTreeClassifier',
+              BaggingClassifier:'BaggingClassifier',
+              ExtraTreesClassifier:'ExtraTreesClassifier',
+              GradientBoostingClassifier:'GradientBoostingClassifier',
+              ExtraTreeClassifier:'ExtraTreeClassifier'
+             }
+
+#BaggingClassifier, ExtraTreesClassifier,GradientBoostingClassifier, VotingClassifier, ExtraTreeClassifier
+
+
+# In[15]:
+
+
+als =list(clf_dictionary['Classification'].keys())
+
+
+# In[16]:
+
+
+#for i in als:
+#    print(list(clf_dictionary['Classification'][i].keys()))
 
 
 # In[17]:
-
-
-clf_dictionary['Classification']
-
-
-# In[18]:
 
 
 #loading Dataset
@@ -122,7 +136,7 @@ def  GenerateXandY(df, y_name):
 
 
 
-# In[19]:
+# In[18]:
 
 
 def run(a_clf, data, clf_hyper={}):
@@ -149,7 +163,7 @@ def run(a_clf, data, clf_hyper={}):
     return ret
 
 
-# In[79]:
+# In[19]:
 
 
 def Generate_Reports_Classification(Result, Algo, n, n_folds):
@@ -254,7 +268,7 @@ def Generate_Reports_Classification(Result, Algo, n, n_folds):
     return(folds, Algo, n, metrics, metrics_names, metrics_Names, metrics_avg, clfs[0])
 
 
-# In[92]:
+# In[25]:
 
 
 def SummaryReport(file):
@@ -300,8 +314,9 @@ def SummaryReport(file):
         plt.boxplot(X.values(), labels=X.keys())
         #sns.boxplot(x=list(X.values()), y=list(X.keys()))
         plt.title(metrics_Names[met], fontsize=18)
-        plt.xlabel('Algorithm', fontsize=12)
-        plt.ylabel(metrics_Names[met], fontsize=12)
+        plt.xlabel('Algorithm', fontsize=10)
+        plt.xticks(rotation=90)
+        plt.ylabel(metrics_Names[met], fontsize=10)
         plt.savefig(fig_name)
 
     try:
@@ -343,7 +358,7 @@ def SummaryReport(file):
     return(X_final)
 
 
-# In[93]:
+# In[26]:
 
 
 def SummaryTable(dat):
@@ -417,7 +432,7 @@ def BestModel(file, dat):
     return(x)
 
 
-# In[107]:
+# In[27]:
 
 
 def highlight_max(data, color='yellow'):
@@ -434,7 +449,7 @@ def highlight_max(data, color='yellow'):
                             index=data.index, columns=data.columns)
 
 
-# In[116]:
+# In[28]:
 
 
 dataX = pd.read_csv('data/heart.csv')
@@ -506,7 +521,7 @@ def main(clf_dict = clf_dictionary, mapper = clf_mapper, data = dataX, Response 
     return(s)
 
 
-# In[118]:
+# In[29]:
 
 
 # run main 
